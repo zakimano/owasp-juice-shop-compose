@@ -1,0 +1,9 @@
+services:
+  juice-shop:
+    image: bkimminich/juice-shop
+    container_name: juice-shop
+    restart: unless-stopped
+    environment:
+      - "NODE_ENV=ctf"
+    ports:
+      - 3000:3000
